@@ -45,6 +45,31 @@
       console.log("Hello Vinay !!!!!!")
    }
 
-   const myFunction = function_name();
-   
-   console.log(myFunction);
+//    ******************************- Memory - **************************
+
+   /*
+     Stack (Primitive) , Heap (Non-Primitive)
+     
+     => when memory allocation in stack we find a copy of that.
+     => when memory allocation in heap we find a reference of that.
+   */
+
+     let  myYoutube = "VinaySingh"
+      
+     let anothername = myYoutube;
+     anothername = "chaiaurvinay"
+
+     console.log(myYoutube);
+     console.log(anothername);
+
+     let userOne = {
+        email: "usergoogle.com",
+        upi:"user@ybl"
+     }
+
+     let userTwo = userOne;
+
+     userTwo.email = "vinay@google.com"
+
+     console.log(userOne.email);
+     console.log(userTwo.email);
